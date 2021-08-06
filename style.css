@@ -1,0 +1,19 @@
+
+
+#navbar {
+  position: fixed;
+  width: 100vw;
+  background-color: red;
+  /* The following part may be better off in navbar-links, TODO: Research */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+#navbar-links {
+  padding-right: 20px;
+}
+
+#navbar a {
+  padding: 5px;
+}
