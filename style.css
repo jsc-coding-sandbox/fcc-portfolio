@@ -2,18 +2,34 @@
 
 #navbar {
   position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100vw;
+  max-height: 40px;
   background-color: red;
-  /* The following part may be better off in navbar-links, TODO: Research */
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
-#navbar-links {
-  padding-right: 20px;
+#navbar-icons {
+}
+
+#navbar-spacing {
+/*  width: 100%;*/
+  /* better to use flex-grow here than width */
+  flex-grow: 0.95;
+}
+
+/* TODO: Need to find a way to stop them going to a new line */
+#navbar-text {
+  margin-right: 10px;
 }
 
 #navbar a {
-  padding: 5px;
+}
+
+#navbar img {
+  max-width: 30px;
+  max-height: 30px;
 }
