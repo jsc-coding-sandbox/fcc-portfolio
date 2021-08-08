@@ -1,35 +1,40 @@
 
 
-#navbar {
+nav {
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
-  max-height: 40px;
+  max-height: 4rem;
   background-color: red;
   display: flex;
   flex-wrap: nowrap;
+  overflow: hidden;
   justify-content: center;
+  z-index: 10;
+}
+
+nav a {
+  margin: 1rem;
+}
+
+nav img {
+  max-width: 30px;
+  max-height: 30px;
 }
 
 #navbar-icons {
 }
 
 #navbar-spacing {
-/*  width: 100%;*/
-  /* better to use flex-grow here than width */
   flex-grow: 0.95;
 }
 
-/* TODO: Need to find a way to stop them going to a new line */
 #navbar-text {
-  margin-right: 10px;
+  display: flex;
 }
 
-#navbar a {
-}
-
-#navbar img {
-  max-width: 30px;
-  max-height: 30px;
+#navbar-text a {
+  /*height: 100%;*/
+  border: 1px solid grey;
 }
